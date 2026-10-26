@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abb95754630f85742b214db5635b36ab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 349548
+  packageName: "KHS \u2013 Daejojeon, Changdeokgung Palace"
+  packageVersion: 1.0
+  assetPath: Assets/DaejojeonComplex/Daejojeon/Scene/Demo_DaejojeonSettings.lighting
+  uploadId: 832252
