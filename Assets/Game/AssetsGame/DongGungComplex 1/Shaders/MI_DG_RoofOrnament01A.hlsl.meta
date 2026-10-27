@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 324d28e07b96cfe47aa046e98e45839c
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_RoofOrnament01A.hlsl
+  uploadId: 715580

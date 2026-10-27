@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 039c42d377548a646ae44e1ac9b8ef85
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Buyeon01A.hlsl
+  uploadId: 715580

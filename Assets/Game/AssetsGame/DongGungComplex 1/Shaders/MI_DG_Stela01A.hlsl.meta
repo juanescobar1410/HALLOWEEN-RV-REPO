@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 16b05a7e0d0aa8e469780151022b50bd
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Stela01A.hlsl
+  uploadId: 715580

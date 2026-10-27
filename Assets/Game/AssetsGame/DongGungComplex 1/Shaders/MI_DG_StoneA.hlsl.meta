@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7ef5ff07270ab7b449fb0d77a81e7460
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_StoneA.hlsl
+  uploadId: 715580

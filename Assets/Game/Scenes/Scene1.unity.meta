@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-guid: 45595a142a5da334e9c6cdb8c0445ed0
+guid: 82e136c2f5a92244690f942d59f9f3c6
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 349548
-  packageName: "KHS \u2013 Daejojeon, Changdeokgung Palace"
-  packageVersion: 1.0
-  assetPath: Assets/DaejojeonComplex/Daejojeon/Scene/Demo_Daejojeon.unity
-  uploadId: 832252

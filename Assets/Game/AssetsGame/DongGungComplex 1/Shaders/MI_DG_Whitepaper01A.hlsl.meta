@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 56b3774ac3fd46a4db54357af093e4e9
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Whitepaper01A.hlsl
+  uploadId: 715580

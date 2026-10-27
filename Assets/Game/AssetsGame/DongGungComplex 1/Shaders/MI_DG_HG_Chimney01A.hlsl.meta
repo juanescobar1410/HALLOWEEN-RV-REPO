@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9478ff5462b99cb4b856959887a80dec
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_HG_Chimney01A.hlsl
+  uploadId: 715580

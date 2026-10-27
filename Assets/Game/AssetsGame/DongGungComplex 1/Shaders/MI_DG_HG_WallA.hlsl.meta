@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 668683c4d42850a40aa974fa3d3b43d3
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_HG_WallA.hlsl
+  uploadId: 715580

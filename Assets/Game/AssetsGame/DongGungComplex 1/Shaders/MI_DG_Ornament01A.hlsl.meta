@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f9609fc00bb20bb4594b55861e0f295b
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Ornament01A.hlsl
+  uploadId: 715580

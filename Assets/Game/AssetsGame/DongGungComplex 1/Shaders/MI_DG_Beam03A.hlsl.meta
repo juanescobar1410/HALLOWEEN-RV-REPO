@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: af37e50333a02ba4ca86bd62a1dacb38
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Beam03A.hlsl
+  uploadId: 715580

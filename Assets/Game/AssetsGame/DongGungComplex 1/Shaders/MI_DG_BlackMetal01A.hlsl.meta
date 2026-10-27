@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7e862d4a2b0b50e43bc7e1af2f445948
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_BlackMetal01A.hlsl
+  uploadId: 715580

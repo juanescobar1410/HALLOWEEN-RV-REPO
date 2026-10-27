@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f1f2f8161c7cb244ea35d0e1b1d28a95
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Boaji01A.hlsl
+  uploadId: 715580

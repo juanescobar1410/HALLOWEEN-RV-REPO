@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aca9c23c4e2b0f64083ea4215c8bd8dc
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_InsideWallpaper01A.hlsl
+  uploadId: 715580

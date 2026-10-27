@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f44b34078d1f3f84cacb15e063e3631c
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Roof01A.hlsl
+  uploadId: 715580

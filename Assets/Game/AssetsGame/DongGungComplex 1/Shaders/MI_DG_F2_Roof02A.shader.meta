@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: abc00000000015007888463120052905
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_F2_Roof02A.shader
+  uploadId: 715580

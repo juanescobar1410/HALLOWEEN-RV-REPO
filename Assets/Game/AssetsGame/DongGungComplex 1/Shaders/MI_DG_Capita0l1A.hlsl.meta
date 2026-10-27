@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e47ca84036da21d49962ce7aef026580
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Capita0l1A.hlsl
+  uploadId: 715580

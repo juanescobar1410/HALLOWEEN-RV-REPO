@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 716a0e8491e2de24e9f4f2786608e2c8
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Window.hlsl
+  uploadId: 715580

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5b3c5188649296f459d3a46b170cf6d2
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_HG_Floor01A.hlsl
+  uploadId: 715580

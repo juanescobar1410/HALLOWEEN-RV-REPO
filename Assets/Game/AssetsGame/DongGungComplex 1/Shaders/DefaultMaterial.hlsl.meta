@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3cd106013c379734dbb28103bf4446ba
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/DefaultMaterial.hlsl
+  uploadId: 715580

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5cbf1aa166a39394b95560d130b94ad3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Settings/UniversalRenderPipelineGlobalSettings.asset
+  uploadId: 715580

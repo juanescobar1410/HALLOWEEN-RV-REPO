@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc6e90e6c9b839e40bd717c0aa9bf4e2
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Ceiling02A.hlsl
+  uploadId: 715580

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: abc00000000001159835720030511625
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_InsideWallpaper01A.shader
+  uploadId: 715580

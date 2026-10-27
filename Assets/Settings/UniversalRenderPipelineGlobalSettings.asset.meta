@@ -1,8 +1,15 @@
 fileFormatVersion: 2
-guid: 18dc0cd2c080841dea60987a38ce93fa
+guid: 3dbd537941093be48b24fe0709c34859
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271920
+  packageName: 'NHA - Gyeongbokgung Palace Vol.4: Gyotaejeon Hall'
+  packageVersion: 1.0
+  assetPath: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  uploadId: 644395

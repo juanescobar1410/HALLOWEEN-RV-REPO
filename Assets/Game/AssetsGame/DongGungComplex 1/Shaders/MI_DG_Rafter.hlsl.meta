@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6cbe31440d9bf7043bfdf539614ad21c
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Rafter.hlsl
+  uploadId: 715580

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e81f84b33d40a2b4e8869c52eae943f4
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Door08A.hlsl
+  uploadId: 715580

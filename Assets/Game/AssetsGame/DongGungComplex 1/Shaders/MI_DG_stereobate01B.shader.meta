@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: abc00000000000568382132597084314
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_stereobate01B.shader
+  uploadId: 715580

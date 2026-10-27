@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1fa08e748ad50934d92e90efc3e9008e
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304769
+  packageName: KHS -Donggung
+  packageVersion: 1.0
+  assetPath: Assets/DongGungComplex/Shaders/MI_DG_Roofplate02A.hlsl
+  uploadId: 715580
