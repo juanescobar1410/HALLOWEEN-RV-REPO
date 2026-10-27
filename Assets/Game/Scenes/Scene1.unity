@@ -9887,6 +9887,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1031081923, guid: abc00000000003557504016681529091, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1031081924, guid: abc00000000003557504016681529091, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -9894,13 +9898,90 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1031081921, guid: abc00000000003557504016681529091, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 483879213}
+    - targetCorrespondingSourceObject: {fileID: 1031081921, guid: abc00000000003557504016681529091, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 483879212}
+    - targetCorrespondingSourceObject: {fileID: 1031081921, guid: abc00000000003557504016681529091, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 483879211}
   m_SourcePrefab: {fileID: 100100000, guid: abc00000000003557504016681529091, type: 3}
 --- !u!4 &483879209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1031081922, guid: abc00000000003557504016681529091, type: 3}
   m_PrefabInstance: {fileID: 483879208}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &483879210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1031081921, guid: abc00000000003557504016681529091, type: 3}
+  m_PrefabInstance: {fileID: 483879208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &483879211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483879210}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.14965543, y: 0.16666667, z: 2.4516304}
+  m_Center: {x: -0.07357769, y: 3.6081452, z: 1.2246901}
+--- !u!65 &483879212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483879210}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.14965543, y: 3.6924794, z: 0.13333334}
+  m_Center: {x: -0.07357769, y: 1.8452388, z: 2.3838387}
+--- !u!65 &483879213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483879210}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.14965543, y: 3.6924794, z: 0.13333334}
+  m_Center: {x: -0.07357769, y: 1.8452388, z: 0.06554157}
 --- !u!1001 &484018452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19105,7 +19186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031081948, guid: abc00000000013487718218827556008, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1031081949, guid: abc00000000013487718218827556008, type: 3}
       propertyPath: m_LocalScale.x
@@ -19153,18 +19234,137 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031081951, guid: abc00000000013487718218827556008, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1031081948, guid: abc00000000013487718218827556008, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 920806242}
+    - targetCorrespondingSourceObject: {fileID: 1031081948, guid: abc00000000013487718218827556008, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 920806241}
   m_SourcePrefab: {fileID: 100100000, guid: abc00000000013487718218827556008, type: 3}
 --- !u!4 &920806238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1031081949, guid: abc00000000013487718218827556008, type: 3}
   m_PrefabInstance: {fileID: 920806237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &920806239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1031081948, guid: abc00000000013487718218827556008, type: 3}
+  m_PrefabInstance: {fileID: 920806237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &920806240 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 1031081950, guid: abc00000000013487718218827556008, type: 3}
+  m_PrefabInstance: {fileID: 920806237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &920806241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920806239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f27e7377c45dd6448267901e12dd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Daejojeon.VR.SlidingDoorHandle
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 920806240}
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+  door: {fileID: 1303434191}
+--- !u!54 &920806242
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920806239}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &923023739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197810,7 +198010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031081957, guid: abc00000000003498141686030107623, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1031081958, guid: abc00000000003498141686030107623, type: 3}
       propertyPath: m_LocalScale.x
@@ -197858,18 +198058,137 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031081960, guid: abc00000000003498141686030107623, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1031081957, guid: abc00000000003498141686030107623, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048383926}
+    - targetCorrespondingSourceObject: {fileID: 1031081957, guid: abc00000000003498141686030107623, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1048383925}
   m_SourcePrefab: {fileID: 100100000, guid: abc00000000003498141686030107623, type: 3}
 --- !u!4 &1048383922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1031081958, guid: abc00000000003498141686030107623, type: 3}
   m_PrefabInstance: {fileID: 1048383921}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1048383923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1031081957, guid: abc00000000003498141686030107623, type: 3}
+  m_PrefabInstance: {fileID: 1048383921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1048383924 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 1031081959, guid: abc00000000003498141686030107623, type: 3}
+  m_PrefabInstance: {fileID: 1048383921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1048383925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048383923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f27e7377c45dd6448267901e12dd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Daejojeon.VR.SlidingDoorHandle
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 1048383924}
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+  door: {fileID: 1303434191}
+--- !u!54 &1048383926
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048383923}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1049759170
 GameObject:
   m_ObjectHideFlags: 0
@@ -202969,6 +203288,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1031082058, guid: abc00000000013408811549953489897, type: 3}
   m_PrefabInstance: {fileID: 1295102282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1303434189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1303434190}
+  - component: {fileID: 1303434191}
+  m_Layer: 0
+  m_Name: VR - Puerta deslizante
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1303434190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303434189}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1989623117}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1303434191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303434189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 240f50ccf40be1e41af0f2765c4eaae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Daejojeon.VR.SlidingDoorGroup
+  panels:
+  - {fileID: 920806238}
+  - {fileID: 1048383922}
+  openOffsets:
+  - {x: -0.06, y: 0, z: -1}
+  - {x: 0.06, y: 0, z: 1}
+  pullDistance: 0.07
+  duration: 0.9
 --- !u!1 &1305212654 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1031088289, guid: abc00000000004896178041238432494, type: 3}
@@ -221062,6 +221433,7 @@ Transform:
   - {fileID: 687968467}
   - {fileID: 1923241085}
   - {fileID: 240684658}
+  - {fileID: 1303434190}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1992014391
