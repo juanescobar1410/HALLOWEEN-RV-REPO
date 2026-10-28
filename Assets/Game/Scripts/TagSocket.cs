@@ -20,43 +20,38 @@ public class TagSocket : XRSocketInteractor
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-
         ActivarPanel(args.interactableObject);
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
-
         DesactivarPanel(args.interactableObject);
     }
 
-    public void ActivarPanel(IXRSelectInteractable interactable)
+    public void ActivarPanel(IXRSelectInteractable interactable) => CambiarPanel(interactable, true);
+    public void DesactivarPanel(IXRSelectInteractable interactable) => CambiarPanel(interactable, false);
+
+    void CambiarPanel(IXRSelectInteractable interactable, bool activo)
     {
+        var manager = InteractionManager.instance;
+        if (manager == null) return;
+
         switch (interactable.transform.tag)
         {
             case "Pila 1":
-                InteractionManager.instance.panel1 = true;
+            case "Parte1":
+                manager.panel1 = activo;
                 break;
-
             case "Pila 2":
-                InteractionManager.instance.panel2 = true;
-                InteractionManager.instance.panel3 = true;
+                manager.panel2 = activo;
+                manager.panel3 = activo;
                 break;
-        }
-    }
-
-    public void DesactivarPanel(IXRSelectInteractable interactable)
-    {
-        switch (interactable.transform.tag)
-        {
-            case "Pila 1":
-                InteractionManager.instance.panel1 = false;
+            case "Parte2":
+                manager.panel2 = activo;
                 break;
-
-            case "Pila 2":
-                InteractionManager.instance.panel2 = false;
-                InteractionManager.instance.panel3 = false;
+            case "Parte3":
+                manager.panel3 = activo;
                 break;
         }
     }

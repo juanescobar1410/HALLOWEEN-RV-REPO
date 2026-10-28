@@ -26,6 +26,7 @@ namespace Daejojeon.VR
 
         public bool IsOpen => !moving && openness >= .999f;
         public bool IsMoving => moving;
+        public bool IsLocked { get; set; }
 
         void Awake() => Initialize();
 
@@ -58,7 +59,7 @@ namespace Daejojeon.VR
         public bool BeginDrag(SlidingDoorHandle handle, Vector3 handPosition)
         {
             Initialize();
-            if (!enabled || moving || activeHandle != null) return false;
+            if (!enabled || IsLocked || moving || activeHandle != null) return false;
             var index = System.Array.IndexOf(panels, handle.transform);
             if (index < 0 || openOffsets[index].sqrMagnitude < .000001f) return false;
             var parent = panels[index].parent;
@@ -71,7 +72,7 @@ namespace Daejojeon.VR
 
         public void ContinueDrag(SlidingDoorHandle handle, Vector3 handPosition)
         {
-            if (activeHandle != handle || moving) return;
+            if (activeHandle != handle || IsLocked || moving) return;
             if (Vector3.Dot(handPosition - grabPosition, dragAxis) < pullDistance) return;
             startOpenness = openness;
             goalOpenness = IsOpen ? 0f : 1f;
@@ -130,3 +131,4 @@ namespace Daejojeon.VR
         }
     }
 }
+
