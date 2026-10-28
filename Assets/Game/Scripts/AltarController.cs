@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Filtering;
@@ -52,7 +53,7 @@ public class AltarController : MonoBehaviour, IXRSelectFilter
         }
 
         tiempoCompleto += Time.deltaTime;
-        if (tiempoCompleto < 0.5f) return;
+        if (tiempoCompleto < 2f) return;
 
         OfrendaConfirmada = true;
         foreach (var socket in sockets)
@@ -60,10 +61,26 @@ public class AltarController : MonoBehaviour, IXRSelectFilter
                 pieza.selectFilters.Add(this);
         if (reina != null) reina.SetActive(false);
         if (salida != null) salida.Abrir();
-        if (luz != null) luz.enabled = true;
+        if (luz != null) StartCoroutine(EncenderLuzGradualmente());
         if (sonido != null && sonido.clip != null) sonido.Play();
     }
 
+    IEnumerator EncenderLuzGradualmente()
+    {
+        float intensidadFinal = luz.intensity;
+        float tiempo = 0f;
+        const float duracion = 2f;
+
+        luz.intensity = 0f;
+        luz.enabled = true;
+        while (tiempo < duracion)
+        {
+            tiempo += Time.deltaTime;
+            luz.intensity = Mathf.Lerp(0f, intensidadFinal, tiempo / duracion);
+            yield return null;
+        }
+        luz.intensity = intensidadFinal;
+    }
     bool TodasLasPiezasColocadas()
     {
         if (sockets == null || sockets.Length != 3) return false;
