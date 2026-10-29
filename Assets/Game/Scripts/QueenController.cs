@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,6 +22,33 @@ public class QueenController : MonoBehaviour
     [SerializeField] float velocidad = 1.5f;
     [SerializeField] float distanciaCaptura = 1.2f;
     [SerializeField] float tiempoCaptura = 1f;
+
+    // =========================================================
+    // NUEVO: SONIDO DE PROXIMIDAD
+    // =========================================================
+
+    [Header("Sonido de proximidad")]
+    [SerializeField] AudioSource audioSusurro;
+    [SerializeField] AudioClip clipSusurro;
+    [SerializeField, Range(0f, 1f)] float volumenSusurro = 0.4f;
+    [SerializeField] float distanciaSusurro = 8f;
+    [SerializeField] float intervaloSusurroMin = 3.5f;
+    [SerializeField] float intervaloSusurroMax = 5f;
+
+    // =========================================================
+    // NUEVO: SONIDO CUANDO EL JUGADOR VE A LA REINA
+    // =========================================================
+
+    [Header("Sonido al ser observada")]
+    [SerializeField] AudioSource audioAlSerObservada;
+    [SerializeField] AudioClip clipAlSerObservada;
+    [SerializeField, Range(0f, 1f)] float volumenAlSerObservada = 0.7f;
+    [SerializeField] float intervaloSonidoObservada = 2f;
+
+    // Variables nuevas para controlar los sonidos.
+    bool observadaAnteriormente;
+    float siguienteSusurro;
+    float siguienteSonidoObservada;
 
     readonly RaycastHit[] impactos = new RaycastHit[64];
     NavMeshPath ruta;
@@ -50,7 +78,13 @@ public class QueenController : MonoBehaviour
 
     void Update()
     {
-        if (Capturado || altar.OfrendaConfirmada) return;
+        if (Capturado || altar.OfrendaConfirmada)
+        {
+            // NUEVO: detener los efectos cuando termina el encuentro.
+            DetenerSonidos();
+            return;
+        }
+
         if (!agente.isOnNavMesh)
         {
             if (animador != null) animador.SetBool("Caminando", false);
@@ -61,6 +95,40 @@ public class QueenController : MonoBehaviour
         Vector3 torso = limites.center;
         Vector3 cabeza = limites.center + Vector3.up * limites.extents.y * 0.65f;
         bool observada = PuntoObservado(torso) || PuntoObservado(cabeza);
+
+        // =====================================================
+        // NUEVO: DETECTAR CUANDO EL JUGADOR EMPIEZA A MIRARLA
+        // =====================================================
+
+        if (observada && !observadaAnteriormente)
+        {
+            // Interrumpir el susurro si estaba reproduciéndose.
+            if (audioSusurro != null && audioSusurro.isPlaying)
+                audioSusurro.Stop();
+
+            // Reproducir una vez el sonido de descubrimiento.
+            if (audioAlSerObservada != null &&
+                clipAlSerObservada != null &&
+                !audioAlSerObservada.isPlaying &&
+                Time.time >= siguienteSonidoObservada)
+            {
+                audioAlSerObservada.PlayOneShot(
+                    clipAlSerObservada,
+                    volumenAlSerObservada
+                );
+
+                siguienteSonidoObservada =
+                    Time.time + intervaloSonidoObservada;
+            }
+        }
+
+        // Guardar el estado actual para detectar el siguiente cambio.
+        observadaAnteriormente = observada;
+
+        // =====================================================
+        // COMPORTAMIENTO ORIGINAL DE LA REINA
+        // =====================================================
+
         if (observada)
         {
             sinMirar = 0f;
@@ -76,7 +144,21 @@ public class QueenController : MonoBehaviour
             }
         }
 
+        // =====================================================
+        // NUEVO: GESTIONAR EL SUSURRO DE PROXIMIDAD
+        // =====================================================
+
+        GestionarSusurroProximidad(observada);
+
+        // =====================================================
+        // ANIMACIÓN ORIGINAL
+        // =====================================================
+
         if (animador != null) animador.SetBool("Caminando", !agente.isStopped && agente.velocity.sqrMagnitude > 0.01f);
+
+        // =====================================================
+        // LÓGICA ORIGINAL DE CAPTURA
+        // =====================================================
 
         Vector3 diferencia = ojosJugador.position - transform.position;
         float distanciaHorizontal = new Vector2(diferencia.x, diferencia.z).magnitude;
@@ -89,11 +171,94 @@ public class QueenController : MonoBehaviour
             agente.ResetPath();
             agente.isStopped = true;
             altar.enabled = false;
+            DetenerSonidos();
+
             if (animador != null && animador.runtimeAnimatorController != null && manoDerecha != null)
                 StartCoroutine(AnimarCaptura());
             else
                 avisoCaptura.SetActive(true);
         }
+    }
+
+    // =========================================================
+    // NUEVO: SISTEMA DE SUSURROS DE PROXIMIDAD
+    // =========================================================
+
+    void GestionarSusurroProximidad(bool observada)
+    {
+        if (audioSusurro == null || clipSusurro == null)
+            return;
+
+        // No susurrar mientras el jugador mira a la Reina,
+        // después de la captura o al completar la ofrenda.
+        if (observada || Capturado || altar.OfrendaConfirmada)
+        {
+            if (audioSusurro.isPlaying)
+                audioSusurro.Stop();
+
+            return;
+        }
+
+        // Calcular la distancia horizontal al jugador.
+        Vector3 diferencia = ojosJugador.position - transform.position;
+
+        float distanciaHorizontal =
+            new Vector2(diferencia.x, diferencia.z).magnitude;
+
+        // Evitar avisos cuando hay un desnivel excesivo.
+        if (Mathf.Abs(diferencia.y) > 2.5f)
+        {
+            if (audioSusurro.isPlaying)
+                audioSusurro.Stop();
+
+            return;
+        }
+
+        // Reproducir el aviso únicamente dentro del rango.
+        if (distanciaHorizontal > distanciaSusurro)
+        {
+            if (audioSusurro.isPlaying)
+                audioSusurro.Stop();
+
+            return;
+        }
+
+        // No repetir el sonido mientras se reproduce
+        // ni antes de que termine el intervalo configurado.
+        if (audioSusurro.isPlaying ||
+            Time.time < siguienteSusurro)
+        {
+            return;
+        }
+
+        audioSusurro.PlayOneShot(
+            clipSusurro,
+            volumenSusurro
+        );
+
+        float intervaloMin = Mathf.Min(
+            intervaloSusurroMin,
+            intervaloSusurroMax
+        );
+
+        float intervaloMax = Mathf.Max(
+            intervaloSusurroMin,
+            intervaloSusurroMax
+        );
+
+        siguienteSusurro = Time.time +
+            UnityEngine.Random.Range(intervaloMin, intervaloMax);
+    }
+
+    // NUEVO: detener los sonidos de la Reina.
+    void DetenerSonidos()
+    {
+        if (audioSusurro != null && audioSusurro.isPlaying)
+            audioSusurro.Stop();
+
+        if (audioAlSerObservada != null &&
+            audioAlSerObservada.isPlaying)
+            audioAlSerObservada.Stop();
     }
 
     IEnumerator AnimarCaptura()
@@ -147,11 +312,17 @@ public class QueenController : MonoBehaviour
     void OnDisable()
     {
         StopAllCoroutines();
+
+        // NUEVO: evitar que los efectos sigan sonando
+        // si se desactiva el controlador.
+        DetenerSonidos();
+
         sujetando = false;
         foreach (var proveedor in locomocionDesactivada)
             if (proveedor != null) proveedor.enabled = true;
         locomocionDesactivada.Clear();
     }
+
     bool PuntoObservado(Vector3 punto)
     {
         Vector3 diferencia = punto - ojosJugador.position;
@@ -204,7 +375,3 @@ public class QueenController : MonoBehaviour
         agente.isStopped = false;
     }
 }
-
-
-
-
