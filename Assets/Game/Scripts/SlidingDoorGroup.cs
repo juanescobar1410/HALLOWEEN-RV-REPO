@@ -81,6 +81,16 @@ namespace Daejojeon.VR
             activeHandle = null;
         }
 
+        public void Open()
+        {
+            Initialize();
+            if (!enabled || IsLocked || moving || IsOpen) return;
+            activeHandle = null;
+            startOpenness = openness;
+            goalOpenness = 1f;
+            elapsed = 0f;
+            moving = true;
+        }
         public void EndDrag(SlidingDoorHandle handle)
         {
             if (activeHandle == handle) activeHandle = null;

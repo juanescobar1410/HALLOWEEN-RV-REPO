@@ -183,8 +183,7 @@ public class QueenController : MonoBehaviour
     {
         while (objeto != null)
         {
-            if (objeto.name.IndexOf("door", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                objeto.name.IndexOf("puerta", StringComparison.OrdinalIgnoreCase) >= 0) return true;
+            if (objeto.name.StartsWith("SM_DG_Door08", StringComparison.OrdinalIgnoreCase)) return true;
             objeto = objeto.parent;
         }
         return false;
