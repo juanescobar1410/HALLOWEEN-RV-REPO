@@ -85,6 +85,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a2aa3c09f0a23d42b5ead13365bce0d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2163249894032072675}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a2aa3c09f0a23d42b5ead13365bce0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6573482038445128052}
   m_SourcePrefab: {fileID: 100100000, guid: 5a2aa3c09f0a23d42b5ead13365bce0d, type: 3}
 --- !u!1 &5659870519143751850 stripped
 GameObject:
@@ -269,3 +272,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3032401, y: 0.30022934, z: 0.49668875}
   m_Center: {x: 0.0057542566, y: -0.061888773, z: 0.085059695}
+--- !u!114 &6573482038445128052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659870519143751850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a85413129c22d428ae26e59e00c414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BabyFragmentPickup
+  inventario: {fileID: 206225462556200149, guid: 2730b54600cc5ce4b9946bbe4ebbf594, type: 3}
+  tipo: 2

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7243518249361440881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2226133670415362718}
+  - component: {fileID: 206225462556200149}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2226133670415362718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243518249361440881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1190605, y: 2.97342, z: 1.73706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206225462556200149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243518249361440881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca6b5682e36bf3459049532326ed374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BabyFragmentInventory
+  inventoryPanel: {fileID: 0}
+  toggleInventoryAction: {fileID: -83052256896553915, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  baseIcon: {fileID: 0}
+  torsoIcon: {fileID: 0}
+  cabezaIcon: {fileID: 0}
+  fragmentoBase: {fileID: 0}
+  fragmentoTorso: {fileID: 0}
+  fragmentoCabeza: {fileID: 0}
+  puntoBase: {fileID: 0}
+  puntoTorso: {fileID: 0}
+  puntoCabeza: {fileID: 0}
+  colorEncontrado: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  colorPendiente: {r: 0.25, g: 0.25, b: 0.25, a: 0.65}
