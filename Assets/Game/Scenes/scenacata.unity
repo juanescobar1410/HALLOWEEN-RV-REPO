@@ -1509,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7459442142708147920, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
       propertyPath: m_Name
-      value: Lever
+      value: LeverFragments
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
