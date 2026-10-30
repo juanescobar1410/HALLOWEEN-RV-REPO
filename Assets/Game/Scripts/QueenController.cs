@@ -42,6 +42,7 @@ public class QueenController : MonoBehaviour
     [Header("Sonido al ser observada")]
     [SerializeField] AudioSource audioAlSerObservada;
     [SerializeField] AudioClip clipAlSerObservada;
+    [SerializeField] AudioSource audioCaptura;
     [SerializeField, Range(0f, 1f)] float volumenAlSerObservada = 0.7f;
     [SerializeField] float intervaloSonidoObservada = 2f;
 
@@ -172,6 +173,7 @@ public class QueenController : MonoBehaviour
             agente.isStopped = true;
             altar.enabled = false;
             DetenerSonidos();
+            if (audioCaptura != null) audioCaptura.Play();
 
             if (animador != null && animador.runtimeAnimatorController != null && manoDerecha != null)
                 StartCoroutine(AnimarCaptura());

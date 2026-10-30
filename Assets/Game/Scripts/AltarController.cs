@@ -13,6 +13,7 @@ public class AltarController : MonoBehaviour, IXRSelectFilter
     [SerializeField] HingedExitDoors salida;
     [SerializeField] Light luz;
     [SerializeField] AudioSource sonido;
+    [SerializeField] VictoryPanel final;
 
     float tiempoCompleto;
     public bool OfrendaConfirmada { get; private set; }
@@ -63,6 +64,15 @@ public class AltarController : MonoBehaviour, IXRSelectFilter
         if (salida != null) salida.Abrir();
         if (luz != null) StartCoroutine(EncenderLuzGradualmente());
         if (sonido != null && sonido.clip != null) sonido.Play();
+        if (final != null) StartCoroutine(MostrarFinal());
+    }
+
+    IEnumerator MostrarFinal()
+    {
+        if (salida != null)
+            yield return new WaitUntil(() => salida.IsOpen);
+        yield return new WaitForSecondsRealtime(1f);
+        yield return final.Mostrar();
     }
 
     IEnumerator EncenderLuzGradualmente()

@@ -13,6 +13,8 @@ public class HingedExitDoors : MonoBehaviour
     float tiempo;
     bool abriendo;
 
+    public bool IsOpen => tiempo >= 1.5f;
+
     void Awake()
     {
         if (puerta1 == null || puerta2 == null)
